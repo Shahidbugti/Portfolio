@@ -1,0 +1,272 @@
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+h1{
+    font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p{
+    font-size: 2rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4,
+h5
+{
+font-size: 2.8rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    outline-style: solid white;
+}
+/* Global Styles */
+  
+
+/*global style section ends*/
+
+/* nev section with hero */
+.main-head{
+    background: #131c27;
+    color: white;
+}
+nav{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    flex: 2 1 40rem;
+    font-family: 'Dancing Script', cursive;
+}
+.hero{
+    background: linear-gradient(rgba(0, 0, 0,0.5), transparent),url(./img/img2.jpg);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h3{
+    padding: 3rem;
+}
+
+/* locations section starts */
+#locations{
+    min-height: 120vh;
+    background:linear-gradient(rgba(0, 0, 0,0.5), transparent), url("./img/img4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.location-head{
+    width: 90%;
+    margin:auto;
+}
+.location-head h2{
+    padding: 1rem 0rem;
+    text-decoration: underline;
+}
+.location-head h3{
+padding: 4rem 0rem;
+color: #86a2be;
+}
+button:hover{
+    background:#6e7d8f;
+    border-radius: 0.2rem;
+    transform: skew(10%);
+}
+/* locations section  ends*/
+
+/* Benifitssection starts*/
+.benifits-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.benifits-head h3{
+    padding: 1rem;
+}
+.cards{
+    width:90%;
+    margin: auto;
+    display:flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    flex: 1 1 25rem;
+    min-height: 50vh;
+    margin: 2rem 5rem;
+    border: 0.2rem dotted aqua;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.164),
+                0 -1rem 1rem rgba(0, 0, 0, 0.164);
+}
+.card-icon{
+    background: #879099;
+    height: 12rem;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    max-width: 20%;
+}
+.card h4{
+    padding: 1rem;
+    text-align: center;
+}
+.card p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/*Benifits section ends*/
+/*form section starts*/
+.form-section{
+    background:linear-gradient(rgba(0, 0, 0,0.5), transparent), url("./img/mount.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+    height: 70vh;
+    margin:5rem auto;
+    margin-bottom: 5rem;
+    background: #131c27;
+    border-radius: 1rem;
+    box-shadow: 1rem 0 0 0 #343c44,
+                0 -0.5rem 0 1.5rem #343c44;
+}
+form h2{
+    color: #6e7d8f;
+}
+form label{
+    color: #8591a0;
+}
+form input{
+    display: block;
+    border: 2px solid #343c44;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30rem;
+}
+form button{
+    width: 30rem;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+}
+footer{
+    color: white;
+    background: #131c27;
+}
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 80%;
+    margin: auto;
+    min-height: 5vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+}
+footer ul li img{
+width: 5rem;
+background-color: white;
+ border-radius: 50%;
+}
+  
+
+@media screen and (max-width: 80.3rem){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .location-head h3{
+        -webkit-text-fill-color: whitesmoke;
+    }
+    .footer-wrapper{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer h5{
+        padding-bottom: 3rem;
+    }
+}
