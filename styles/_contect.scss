@@ -1,0 +1,43 @@
+.form-section{
+    min-height: 80vh;
+    @include flex(center, center, row);
+    margin-top: 3rem;
+}
+
+form{
+    padding: 3rem 10rem;
+    box-shadow: 0rem 1rem 1rem rgba($color: #000000, $alpha: 0.2),
+                0rem 2rem 4rem rgba($color: #000000, $alpha: 0.2);
+    @include flex(center, center, column);
+    border-radius: 2rem;
+
+
+
+
+
+    input, textarea{
+    margin: 2rem;
+    padding: 1rem;
+
+    &:focus{
+        outline: 2px solid black;
+    }
+    }
+
+    textarea{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+    }
+
+    button{
+        width: 85%;
+        padding: 1.5rem;
+        background: $background-color;
+        color: white;
+        border-radius: 2rem;
+
+        &:focus{
+            background: rgb(53, 122, 168);
+        }
+    }
+}
